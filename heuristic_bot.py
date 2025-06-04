@@ -97,7 +97,7 @@ class HeuristicBot:
             if not blocked and o_count == 3:
                 count += 1
                 if count >= 2:
-                    return 10005
+                    return 10000
         return 0
     
     def block_opponent(self,board, x, y, player, opponent):
@@ -131,7 +131,7 @@ class HeuristicBot:
                 score += 5000
              # Nếu chuỗi đối thủ có 4 quân và ít nhất 1 đầu mở → rất nguy hiểm, ưu tiên chặn rất lớn
             if count_opponent == 4 and open_ends > 0:
-                score += 10000
+                score += 10005
                 
         board[x][y] = EMPTY
         return score
