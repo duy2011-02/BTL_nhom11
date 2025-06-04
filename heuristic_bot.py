@@ -97,7 +97,7 @@ class HeuristicBot:
             if not blocked and o_count == 3:
                 count += 1
                 if count >= 2:
-                    return 10000
+                    return 10005
         return 0
     
     def block_opponent(self,board, x, y, player, opponent):
